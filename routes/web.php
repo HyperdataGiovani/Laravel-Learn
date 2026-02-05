@@ -5,9 +5,7 @@ use App\Models\User;
 use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\PostController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\RegisterController;
 
 // Route::get('/', function () {
 //     return view('home', ['title' => 'Home Page']);
