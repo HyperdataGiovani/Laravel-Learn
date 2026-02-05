@@ -7,6 +7,6 @@
     </div>
     <p class="my-4 font-light">{{ $post['body'] }}</p>
     </p>
-    <a href="/posts" class="font-medium text-blue-500 hover:underline">&laquo; Back</a>
+    <a href="/admin/posts" class="font-medium text-blue-500 hover:underline">&laquo; Back</a>
 </article>
 </x-layout>

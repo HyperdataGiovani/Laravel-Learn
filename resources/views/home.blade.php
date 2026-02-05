@@ -27,7 +27,7 @@
                                     {{ $d->email }}
                                 </td>
                                 <td class="px-3 py-4 text-left">
-                                    <a href="{{ route('user.edit', ['id' => $d->id]) }}"
+                                    <a href="{{ route('admin.user.edit', ['id' => $d->id]) }}"
                                         class="font-medium text-indigo-400 hover:text-indigo-300">
                                         Edit
                                     </a>
@@ -50,7 +50,7 @@
                                             x-text="userName"></span>?
                                     </p>
 
-                                    <form action="{{ route('user.delete', ['id' => $d->id])}}" method="POST">
+                                    <form action="{{ route('admin.user.delete', ['id' => $d->id])}}" method="POST">
                                         @csrf
                                         @method('DELETE')
 

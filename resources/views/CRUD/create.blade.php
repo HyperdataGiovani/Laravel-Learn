@@ -8,7 +8,7 @@
             <p class="text-gray-400 text-sm">Fill in the details below to register a new account.</p>
         </div>
 
-        <form action="{{ route('user.store') }}" method="POST" class="space-y-6">
+        <form action="{{ route('admin.user.store') }}" method="POST" class="space-y-6">
             @csrf
             <div>
                 <label for="username" class="block mb-2 text-sm font-semibold text-gray-300">Username</label>

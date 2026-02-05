@@ -38,7 +38,7 @@ class HomeController extends Controller
 
         User::create($data);
 
-        return redirect()->route('index');
+        return redirect()->route('admin.index');
     }
 
     public function edit(Request $request, $id){
@@ -68,7 +68,7 @@ class HomeController extends Controller
 
         User::whereId($id)->update($data);
 
-        return redirect()->route('index');
+        return redirect()->route('admin.index');
     }
 
     public function delete(Request $request, $id){
@@ -78,6 +78,6 @@ class HomeController extends Controller
             $data->delete();
         }
 
-        return redirect()->route('index');
+        return redirect()->route('admin.index');
     }
 }

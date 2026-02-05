@@ -8,7 +8,7 @@
             <p class="text-gray-400 text-sm">Fill in the details below to update a new information account.</p>
         </div>
 
-        <form action="{{ route('user.update', ['id' => $data->id]) }}" method="POST" class="space-y-6">
+        <form action="{{ route('admin.user.update', ['id' => $data->id]) }}" method="POST" class="space-y-6">
             @csrf
             @method('PUT')
             <div>
